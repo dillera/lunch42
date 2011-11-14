@@ -38,5 +38,13 @@ module Lunch42
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+
+    config.generators do |g|
+    g.test_framework :rspec
+    end
+
   end
+
 end
+
+

@@ -1,0 +1,45 @@
+LUNCH42
+
+Notes:
+
+
+brew install rbenv
+rbenv install 1.9.2-p290
+gem update --system
+cd to dir
+rbenv local 1.9.2-p290
+
+gem install rails --version=3.0.8 --no-ri --no-rdoc
+
+rails new lunch42 -T
+
+bundle install
+
+rails generate cucumber:install
+rails generate rspec:install
+
+
+
+rails generate scaffold Venue \
+name:string  \
+description:text \
+address1:string \
+address2:string \
+city:string \
+state:string \
+zipcode:string \
+phone:string \
+distance:decimal
+web_url:string \
+menu_url:string \
+price:decimal \
+category:int \
+yelpid:int \
+rating:int \
+
+rails generate scaffold Category \
+name:string \
+description:text \
+rating:int 
+
+
