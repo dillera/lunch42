@@ -29,13 +29,13 @@ city:string \
 state:string \
 zipcode:string \
 phone:string \
-distance:decimal
+distance:decimal \
 web_url:string \
 menu_url:string \
 price:decimal \
 category:int \
 yelpid:int \
-rating:int \
+rating:int
 
 rails generate scaffold Category \
 name:string \
